@@ -1,0 +1,30 @@
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+#various artifacts
+spec/examples.txt
+
+# scm revert files
+**.orig
+
+# Mac finder artifacts
+.DS_Store
+
+# Netbeans project directory
+/nbproject/
+
+# RubyMine project files
+.idea
+
+# Textmate project files
+/*.tmproj
+
+# vim artifacts
+**.swp
