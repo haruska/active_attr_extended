@@ -11,6 +11,8 @@
 #various artifacts
 spec/examples.txt
 
+gemfiles/*.lock
+
 # scm revert files
 **.orig
 

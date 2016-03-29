@@ -7,7 +7,8 @@ module ActiveAttrExtended; end
 
 
 # Reassign the typecaster mapping to include collections
-ActiveAttr::Typecasting.module_eval { send(:remove_const, :TYPECASTER_MAP) }
+ActiveAttr::Typecasting.module_eval { send(:remove_const, :TYPECASTER_MAP) if defined?(ActiveAttr::Typecasting::TYPECASTER_MAP) }
+
 module ActiveAttr
   module Typecasting
     # @private
@@ -23,5 +24,11 @@ module ActiveAttr
         Object     => ObjectTypecaster,
         String     => StringTypecaster
     }.freeze
+
+    # redefine for active_attr <= 0.7.0
+    def typecaster_for(type)
+      typecaster = TYPECASTER_MAP[type]
+      typecaster.new if typecaster
+    end
   end
 end
