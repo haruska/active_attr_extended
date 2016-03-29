@@ -1,7 +1,6 @@
 # ActiveAttrExtended
 
 [![Build History][travis badge]][travis]
-[![Code Climate][codeclimate badge]][codeclimate]
 
 ActiveAttrExtended is an extension of ActiveAttr to include Arrays and Hashes as
 valid attribute types.
@@ -22,8 +21,6 @@ The biggest difference is the ability to use Arrays and Hashes as attribute type
 
 [api]: http://rubydoc.info/gems/active_attr_extended
 [aa_api]: http://rubydoc.info/gems/active_attr
-[codeclimate badge]: https://codeclimate.com/github/haruska/active_attr_extended.png
-[codeclimate]: https://codeclimate.com/github/haruska/active_attr_extended
 [rubygems]: http://rubygems.org/gems/active_attr_extended
 [protected_attributes]: https://github.com/rails/protected_attributes
 [strong_parameters]: https://github.com/rails/strong_parameters
