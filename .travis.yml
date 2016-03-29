@@ -10,3 +10,4 @@ gemfiles:
   - gemfiles/active_attr_0.7.0.gemfile
   - gemfiles/active_attr_0.8.5.gemfile
   - gemfiles/active_attr_0.9.0.gemfile
+before_install: gem install bundler -v 1.11.2
