@@ -1,6 +1,10 @@
 language: ruby
 rvm:
+  - 2.3.0
   - 2.2.4
+  - 2.1.8
+  - 2.0.0
+  - 1.9.3
 gemfiles:
   - gemfiles/active_attr_0.6.0.gemfile
   - gemfiles/active_attr_0.7.0.gemfile
